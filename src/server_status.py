@@ -10,7 +10,7 @@ class ServerStatus:
     name: str
     players: int
     tags: list[str]
-    round_start_time: datetime
+    round_start_time: datetime | None
     soft_max_players: int
     run_level: int
 
