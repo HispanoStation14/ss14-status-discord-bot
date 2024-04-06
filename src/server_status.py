@@ -1,11 +1,10 @@
-from dataclasses import dataclass
 from datetime import datetime
 
 from discord import Embed
+from pydantic import BaseModel
 
 
-@dataclass
-class ServerStatus:
+class ServerStatus(BaseModel):
     map: str
     name: str
     players: int
