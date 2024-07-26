@@ -9,7 +9,7 @@ class ServerStatus(BaseModel):
     name: str
     players: int
     tags: list[str]
-    round_start_time: datetime | None
+    round_start_time: datetime | None = None
     soft_max_players: int
     run_level: int
 
